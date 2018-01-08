@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+   <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="responsive_website_redesign/responsive/css/styleofindex.css">
+    <title>VD Frontpage</title>
+</head>
+
+<body class="frontpage">
+   
+   <header><img class="logo" src="responsive_website_redesign/responsive/assets/rest/redesign-files/vdlogotrokut.png"></header>
+
+<ul>
+  <li><a class="active1" class="mod" href="index.html">Home</a></li>
+  <li><a class="gal" href="portfolio.html">Portfolio</a></li>
+  <li><a class="abo" href="aboutme.html">About me</a></li>
+</ul>
+
+
+<section>
+  <img class="mySlides" src="responsive_website_redesign/responsive/assets/rest/mmd/man-coffee-cup-pen.jpg"
+  style="width:100%">
+  <img class="mySlides" src="responsive_website_redesign/responsive/assets/rest/mmd/pexels-photo-270348.jpeg"
+  style="width:100%">
+  <img class="mySlides" src="responsive_website_redesign/responsive/assets/rest/mmd/pexels-photo-403495.jpeg"
+  style="width:100%">
+    <img class="mySlides" src="responsive_website_redesign/responsive/assets/rest/mmd/pexels-photo-533446.jpeg"
+  style="width:100%">
+  <img class="mySlides" src="responsive_website_redesign/responsive/assets/rest/mmd/pexels-photo-66134.jpeg"
+  style="width:100%">
+</section>
+
+
+
+<footer>Copyright Victory Design 2017</footer>
+
+</body>
+<script>var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 2500);
+}</script>
+</html>
